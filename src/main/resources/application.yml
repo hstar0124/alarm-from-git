@@ -1,0 +1,18 @@
+server:
+  tomcat:
+    relaxed-query-chars: ['{','}','^','\','|','[',']']
+  port: 42222
+
+logging:
+  config: classpath:logback-spring.xml
+
+notion:
+  version: 2021-08-16
+  url: https://api.notion.com/v1/pages
+  #apikey: secret_GX9G1Nww0Zn1eiWs9WGFEzHH4jqY6WU2n4FvKVVLJsF
+  #database_id: ca4ff81ff012487aa750ae8d841975d8
+  apikey: secret_u9DeyGgHacl3OMt8t0vdDkRpjwr90jfLNAIobyLYQ03
+  database_id: 470e0e2e4fc74613adaeedfa9a3fadc1
+
+git:
+  mybatis: https://api.github.com/repos/mybatis/mybatis-3/releases/latest
